@@ -1,0 +1,40 @@
+img{
+    display: block;
+    max-width: 100%;
+    border-radius: 0.3rem;
+}
+
+.text-side{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+
+.text-side, .card{
+    width: 50%;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.flex .card{
+    height: 50%;
+}
+
+@media (max-width: 912px) {
+    .flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-side, .card{
+        width: 100%;
+        height: 100%;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}

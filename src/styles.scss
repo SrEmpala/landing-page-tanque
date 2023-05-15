@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body{
+    background-image: url("./assets/M4_Sherman_11th_Armored_division_advance_into_Kronach_Germany_April_1945.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.section{
+    margin-top: 56px;
+    border-radius: 1rem;
+    padding-block: 1rem;
+    height: calc(100% - 56px);
+    backdrop-filter: blur(2px) saturate(180%);
+    background-color: rgba(224, 224, 224, 0.5);
+}
