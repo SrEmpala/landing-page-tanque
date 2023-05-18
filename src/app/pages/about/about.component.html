@@ -27,14 +27,14 @@
                         </tr>
                     </tbody>
                 </table>
-                <ng-template #elseBlock><p *ngIf="!loading">Não conseguimos carregar os tanques :(</p></ng-template>
+                <ng-template #elseBlock><p *ngIf="!loading">Ops! Não conseguimos carregar os tanques :(</p></ng-template>
             </div>
         </div>
     </app-card>
     <br>
 
     <app-card>
-        <p-carousel [value]="tanquesCarrousel" [numVisible]="2" [numScroll]="2" [circular]="false"
+        <p-carousel [value]="tanquesCarrousel" [numVisible]="2" [numScroll]="2" [circular]="true" [autoplayInterval]="3000"
             [responsiveOptions]="responsiveOptions">
             <ng-template let-tanque pTemplate="item">
                 <div class="m-1 text-center py-2 px-1">
